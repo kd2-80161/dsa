@@ -13,7 +13,6 @@ public class Compare {
 				break;
 			
 			}
-
 		}
 	}
 
@@ -25,9 +24,7 @@ public class Compare {
 		int sum=0;
 		
 		while (left <= right) {
-			
 			mid = (left + right) / 2;
-			
 			sum=sum+(cnt++);
 			
 			if (arr[mid] == key) {
@@ -38,21 +35,15 @@ public class Compare {
 				left = mid + 1;
 			else
 				right = mid - 1;
-			
-
 		}
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 12, 13, 41, 455, 666, 4, 3 };
-		
 		int[] arr1 = { 11, 22, 33, 44, 55, 66, 77 };
-		
 		linearSearch(arr, 13);
 		binarySearch(arr1, 11);
-		
-
 	}
 
 }

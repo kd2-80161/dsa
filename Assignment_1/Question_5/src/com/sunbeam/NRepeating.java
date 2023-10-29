@@ -8,12 +8,12 @@ public class NRepeating {
 			int flag=0;
 			for(int j=i+1;j<arr.length;j++) {
 				if(arr[i]==arr[j]) {
-					flag=1;
+					count++;
 					break;
 				}
 			}
-			if(flag==1)
-			count++;
+			if(count==0)
+			 System.out.println("First non-repeating"+arr[i]);
 		}
 		return count;
 		

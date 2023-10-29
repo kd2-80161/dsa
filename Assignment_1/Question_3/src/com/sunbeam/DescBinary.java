@@ -1,5 +1,4 @@
 package com.sunbeam;
-
 public class DescBinary {
 	public static void BinarySearch(int[] arr, int key) {
 		int left = 0;
@@ -16,7 +15,6 @@ public class DescBinary {
 			else
 				left = mid + 1;
 		}
-
 	}
 
 	public static void main(String[] args) {

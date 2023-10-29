@@ -37,6 +37,7 @@ public class Employees {
 	public int hashCode() {
 		return Objects.hash(empid, ename, salary);
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -49,11 +50,9 @@ public class Employees {
 		return empid == other.empid && Objects.equals(ename, other.ename)
 				&& Double.doubleToLongBits(salary) == Double.doubleToLongBits(other.salary);
 	}
+	
 	@Override
 	public String toString() {
 		return "Employee [empid=" + empid + ", ename=" + ename + ", salary=" + salary + "]";
 	}
-	
-	
-	
 }

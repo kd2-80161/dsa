@@ -27,6 +27,8 @@ public class SearchEmployee {
 			if(empid==emp.getEmpid()) {
 				System.out.println("Employee id found");
 			}
+			else
+				System.out.println("Not found");
 		}
 		
 		for(Employees emp:employee) {
@@ -40,8 +42,5 @@ public class SearchEmployee {
 				System.out.println("Employee salary found");
 			}
 		}
-		
-		
 	}
-
 }
